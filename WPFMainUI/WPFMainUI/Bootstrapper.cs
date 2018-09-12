@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using Prism.Modularity;
 using Prism.Unity;
+using PrismMenuModule.Models;
 using WPFMainUI.Views;
 
 namespace WPFMainUI
@@ -34,6 +35,7 @@ namespace WPFMainUI
         protected override void ConfigureContainer()
         {
             base.ConfigureContainer();
+            this.RegisterTypeIfMissing(typeof(IMenuModel), typeof(MenuModel), true);
 
             //this.Container.RegisterType<SplashScreenModule.IShell, MainWindow>(new ContainerControlledLifetimeManager());
         }
