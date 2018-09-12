@@ -2,7 +2,6 @@
 using PrismCommonGUILib.Models;
 using PrismMenuModule.Models;
 using System.Collections.ObjectModel;
-using System.Windows;
 
 namespace PrismMenuModule.ViewModels
 {
