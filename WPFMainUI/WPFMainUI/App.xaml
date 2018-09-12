@@ -3,6 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:WPFMainUI">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="/Styles/HIDDemoStyle.xaml"/>-->
+                <!-- Resource Order
+                https://nathan.alner.net/2010/05/07/wpf-style-and-template-resources-ndash-order-matters/-->
+                <ResourceDictionary Source="pack://application:,,,/PrismCommonGUILib;component/Styles/CommonGUIConstants.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/PrismCommonGUILib;component/Styles/CommonGUIControlTemplate.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/PrismCommonGUILib;component/Styles/CommonGUIDataTemplate.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/PrismCommonGUILib;component/Styles/CommonGUIStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

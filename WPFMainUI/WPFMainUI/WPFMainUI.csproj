@@ -149,6 +149,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Modules\PrismCommonGUILib\PrismCommonGUILib.csproj">
+      <Project>{e5b20bd1-09e0-450e-a514-4fdae5b24c50}</Project>
+      <Name>PrismCommonGUILib</Name>
+      <Private>False</Private>
+    </ProjectReference>
     <ProjectReference Include="..\Modules\PrismMenuModule\PrismMenuModule.csproj">
       <Project>{5e9076fa-4770-4f9e-acdb-7eee30dd6a22}</Project>
       <Name>PrismMenuModule</Name>
