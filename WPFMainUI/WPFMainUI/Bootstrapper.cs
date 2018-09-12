@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using Prism.Modularity;
 using Prism.Unity;
 using WPFMainUI.Views;
 
@@ -19,6 +20,15 @@ namespace WPFMainUI
         protected override void ConfigureModuleCatalog()
         {
             base.ConfigureModuleCatalog();
+            var moduleCatalog = this.ModuleCatalog as ModuleCatalog;
+
+            // Register the UI modules here.
+            // TODO:  Look into loading modules based on a package manifest.
+            if (moduleCatalog != null)
+            {
+                moduleCatalog.AddModule(typeof(PrismMenuModule.PrismMenuModule));
+                moduleCatalog.AddModule(typeof(PrismMVVMDemo.PrismMVVMModule));
+            }
         }
 
         protected override void ConfigureContainer()

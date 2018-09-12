@@ -4,7 +4,7 @@ using PrismMVVMDemo.Views;
 
 namespace PrismMVVMDemo
 {
-    class PrismMVVMModule : IModule
+    public class PrismMVVMModule : IModule
     {
         /// <summary>
         /// The _region manager.
@@ -24,7 +24,7 @@ namespace PrismMVVMDemo
 
         public void Initialize()
         {
-            _regionManager.RegisterViewWithRegion("MenuRegion", typeof(MVVMDemoControl));
+            _regionManager.RegisterViewWithRegion("FeatureRegion", typeof(MVVMDemoControl));
         }
     }
 }
