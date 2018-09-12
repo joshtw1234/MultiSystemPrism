@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using Prism.Modularity;
 using Prism.Unity;
 using WPFMainUI.Views;
 
