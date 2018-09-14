@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.ObjectModel;
 using System.Windows;
 
 namespace PrismCommonGUILib.Models
 {
-    public class BaseGUIModel
+    public abstract class BaseGUIModel
     {
         public virtual ObservableCollection<IMenuItem> GetObservableCollection()
         {
