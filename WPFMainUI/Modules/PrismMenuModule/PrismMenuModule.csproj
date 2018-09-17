@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\IMenuModel.cs" />
+    <Compile Include="Models\MenuButtonItem.cs" />
     <Compile Include="Models\MenuModel.cs" />
     <Compile Include="PrismMenuModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

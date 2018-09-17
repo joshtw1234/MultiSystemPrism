@@ -12,7 +12,7 @@ namespace PrismMenuModule.ViewModels
         public MenuControlViewModel(IMenuModel menuModel)
         {
             _menuModel = menuModel;
-            MenuButtonItems = (_menuModel as BaseGUIModel).GetObservableCollection();
+            MenuButtonItems = (_menuModel as BaseGUIModel).GetBaseObservableCollection();
         }
 
         public ObservableCollection<IMenuItem> MenuButtonItems { get; set; }
